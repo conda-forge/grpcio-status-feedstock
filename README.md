@@ -157,4 +157,5 @@ Feedstock Maintainers
 
 * [@hadim](https://github.com/hadim/)
 * [@sugatoray](https://github.com/sugatoray/)
+* [@xylar](https://github.com/xylar/)
 
