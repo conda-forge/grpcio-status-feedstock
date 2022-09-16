@@ -22,7 +22,7 @@ requirements:
   run:
     - googleapis-common-protos >=1.5.5
     - grpcio >={{ version }}
-    - protobuf>=4.21.3
+    - protobuf >=4.21.3
     - python >=3.6
 
 test:
