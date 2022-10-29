@@ -1,5 +1,5 @@
 {% set name = "grpcio-status" %}
-{% set version = "1.49.1" %}
+{% set version = "1.50.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grpcio-status-{{ version }}.tar.gz
-  sha256: 658f48dc146ee0c7b6eebd302d74e0d45c00727c20035ff51d68750dbaccf5d9
+  sha256: 69be81c4317ec77983fb0eab80221a01e86e833e0fcf2f6acea0a62597c84b93
 
 build:
   number: 0
