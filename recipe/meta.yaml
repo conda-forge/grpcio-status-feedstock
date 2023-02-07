@@ -1,7 +1,6 @@
 {% set name = "grpcio-status" %}
 {% set version = "1.52.0" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -17,13 +16,13 @@ build:
 
 requirements:
   host:
+    - python >=3.6
     - pip
-    - python >=3.6
   run:
-    - googleapis-common-protos >=1.5.5
-    - grpcio >={{ version }}
-    - protobuf >=4.21.6
     - python >=3.6
+    - protobuf >=4.21.6
+    - grpcio >={{ version }}
+    - googleapis-common-protos >=1.5.5
 
 test:
   imports:
