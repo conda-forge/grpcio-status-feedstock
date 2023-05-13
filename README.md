@@ -1,11 +1,11 @@
-About grpcio-status
-===================
+About grpcio-status-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grpcio-status-feedstock/blob/main/LICENSE.txt)
 
 Home: https://grpc.io
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grpcio-status-feedstock/blob/main/LICENSE.txt)
 
 Summary: Status proto mapping for gRPC
 
