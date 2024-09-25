@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grpcio-status-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grpcio_status-{{ version }}.tar.gz
   sha256: 44a445ce55375545a913e005be36fbec7999a4cc320d7aecb7a4469d3d49366c
 
 build:
