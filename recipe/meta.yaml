@@ -1,5 +1,5 @@
 {% set name = "grpcio-status" %}
-{% set version = "1.65.5" %}
+{% set version = "1.67.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grpcio_status-{{ version }}.tar.gz
-  sha256: 2c9fa3af32efd26f01837d44305dce106973bc5357b9a9fc8bbd87bb8bf833d1
+  sha256: c3e5a86fa007e9e263cd5f988a8a907484da4caab582874ea2a4a6092734046b
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - protobuf >=5.26.1,<6.0dev
-    - grpcio >=1.65.5
+    - grpcio >=1.67.0
     - googleapis-common-protos >=1.5.5
 
 test:
