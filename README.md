@@ -158,6 +158,3 @@ Feedstock Maintainers
 * [@sugatoray](https://github.com/sugatoray/)
 * [@xylar](https://github.com/xylar/)
 
-
-<!-- dummy commit to enable rerendering -->
-
