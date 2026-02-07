@@ -3,7 +3,7 @@ About grpcio-status-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grpcio-status-feedstock/blob/main/LICENSE.txt)
 
-Home: https://grpc.io
+Home: https://grpc.io/
 
 Package license: Apache-2.0
 
@@ -19,7 +19,6 @@ gRPC Python: https://grpc.io/docs/languages/python/quickstart/
 gRPC Python API: https://grpc.github.io/grpc/python/
 
 PyPI: [https://pypi.org/project/grpcio-status](https://pypi.org/project/grpcio-status)
-
 
 Current build status
 ====================

@@ -1,41 +1,41 @@
-{% set name = "grpcio-status" %}
-{% set version = "1.78.0" %}
+schema_version: 1
+
+context:
+  name: grpcio-status
+  version: 1.78.0
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/grpcio_status-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/grpcio_status-${{ version }}.tar.gz
   sha256: a34cfd28101bfea84b5aa0f936b4b423019e9213882907166af6b3bddc59e189
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - protobuf >=6.31.1,<7.0.0
     - grpcio >=1.78.0
     - googleapis-common-protos >=1.5.5
 
-test:
-  imports:
-    - grpc_status
-  commands:
-    - pip check
-  requires:
-    - pip
-    - python {{ python_min }}
+tests:
+  - python:
+      imports:
+        - grpc_status
+      python_version: ${{ python_min }}.*
+      pip_check: true
 
 about:
-  home: https://grpc.io
   summary: Status proto mapping for gRPC
   license: Apache-2.0
   license_file: LICENSE
@@ -47,8 +47,9 @@ about:
 
     PyPI: [https://pypi.org/project/grpcio-status](https://pypi.org/project/grpcio-status)
 
-  doc_url: https://grpc.io/docs/languages/python/quickstart/
-  dev_url: https://github.com/grpc/grpc/tree/master/src/python/grpcio_status
+  homepage: https://grpc.io
+  repository: https://github.com/grpc/grpc/tree/master/src/python/grpcio_status
+  documentation: https://grpc.io/docs/languages/python/quickstart/
 
 extra:
   recipe-maintainers:
