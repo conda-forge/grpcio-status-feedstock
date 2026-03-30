@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: grpcio-status
-  version: 1.78.1
+  version: 1.80.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/grpcio_status-${{ version }}.tar.gz
-  sha256: 47e7fa903549c5881344f1cba23c814b5f69d09233541036eb25642d32497c8e
+  sha256: df73802a4c89a3ea88aa2aff971e886fccce162bc2e6511408b3d67a144381cd
 
 build:
   number: 0
@@ -25,9 +25,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - protobuf >=6.31.1,<7.0.0
-    - grpcio >=1.78.1
+    - grpcio >=1.80.0
     - googleapis-common-protos >=1.5.5
-
 tests:
   - python:
       imports:
