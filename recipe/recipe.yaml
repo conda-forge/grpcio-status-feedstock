@@ -21,7 +21,8 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - setuptools
+    - setuptools >=77.0.1
+    - wheel
   run:
     - python >=${{ python_min }}
     - protobuf >=6.33.5,<8.0.0
@@ -31,7 +32,9 @@ tests:
   - python:
       imports:
         - grpc_status
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       pip_check: true
 
 about:
